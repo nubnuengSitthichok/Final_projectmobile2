@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".plagameFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_game">
+
+            <ImageView
+                android:id="@+id/mole1"
+                android:layout_width="116dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="295dp"
+                android:layout_marginBottom="6dp"
+                app:layout_constraintBottom_toTopOf="@+id/mole4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/f" />
+
+            <ImageView
+                android:id="@+id/mole2"
+                android:layout_width="116dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="302dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="23dp"
+                app:layout_constraintBottom_toTopOf="@+id/mole5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mole3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/f" />
+
+            <ImageView
+                android:id="@+id/mole3"
+                android:layout_width="116dp"
+                android:layout_height="96dp"
+                app:layout_constraintBottom_toTopOf="@+id/mole4"
+                app:layout_constraintEnd_toStartOf="@+id/mole2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/mole1"
+                app:layout_constraintTop_toBottomOf="@+id/mole1"
+                app:layout_constraintVertical_bias="0.488"
+                app:srcCompat="@drawable/f" />
+
+            <ImageView
+                android:id="@+id/mole4"
+                android:layout_width="116dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mole1"
+                app:srcCompat="@drawable/f" />
+
+            <ImageView
+                android:id="@+id/mole5"
+                android:layout_width="116dp"
+                android:layout_height="96dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mole3"
+                app:layout_constraintTop_toBottomOf="@+id/mole2"
+                app:srcCompat="@drawable/f" />
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="131dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/start_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/mole5"
+                app:layout_constraintHorizontal_bias="0.477"
+                app:layout_constraintStart_toEndOf="@+id/mole4"
+                app:layout_constraintTop_toBottomOf="@+id/mole3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="289dp"
+                android:fontFamily="@font/frijole"
+                android:text="Score : 0"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintBottom_toTopOf="@+id/mole1"
+                app:layout_constraintEnd_toStartOf="@+id/tv_left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginBottom="289dp"
+                android:fontFamily="@font/frijole"
+                android:text="Left : 5"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/mole1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_score"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</layout>
