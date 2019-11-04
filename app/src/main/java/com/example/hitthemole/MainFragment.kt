@@ -21,6 +21,9 @@ class MainFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
             // Inflate the layout for this fragment
             val binding = DataBindingUtil.inflate<FragmentMainBinding>(inflater,R.layout.fragment_main, container, false)
+            binding.loginButton.setOnClickListener{view ->
+            view.findNavController().navigate(R.id.action_mainFragment_to_startgameFragment)
+        }
             //NavigationUI.setupWithNavController(binding.navView, navController)
             setHasOptionsMenu(true)
             return binding.root

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.setContentView
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.hitthemole.databinding.ActivityMainBinding
 import com.example.hitthemole.databinding.FragmentMainBinding
@@ -26,6 +27,9 @@ class startgameFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding = DataBindingUtil.inflate<FragmentStartgameBinding>(inflater,R.layout.fragment_startgame, container, false)
+        binding.playGamePlaygamebutton.setOnClickListener{view ->
+            view.findNavController().navigate(R.id.action_startgameFragment_to_plagameFragment)
+        }
         return binding.root
 
         // Inflate the layout for this fragment

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_rankFragment2"
             app:destination="@id/rankFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_startgameFragment"
+            app:destination="@id/startgameFragment" />
     </fragment>
     <fragment
         android:id="@+id/rankFragment"
@@ -45,5 +48,26 @@
         android:id="@+id/plagameFragment"
         android:name="com.example.hitthemole.plagameFragment"
         android:label="fragment_plagame"
-        tools:layout="@layout/fragment_plagame" />
+        tools:layout="@layout/fragment_plagame" >
+        <action
+            android:id="@+id/action_plagameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment"
+            app:popUpTo="@+id/startgameFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_plagameFragment_to_yourScoreFragment"
+            app:destination="@id/yourScoreFragment"
+            app:popUpTo="@+id/startgameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.hitthemole.gameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" />
+    <fragment
+        android:id="@+id/yourScoreFragment"
+        android:name="com.example.hitthemole.yourScoreFragment"
+        android:label="fragment_your_score"
+        tools:layout="@layout/fragment_your_score" />
 </navigation>
