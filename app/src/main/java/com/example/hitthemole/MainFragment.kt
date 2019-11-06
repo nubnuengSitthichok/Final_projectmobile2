@@ -19,28 +19,28 @@ class MainFragment : Fragment() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-            // Inflate the layout for this fragment
-            val binding = DataBindingUtil.inflate<FragmentMainBinding>(inflater,R.layout.fragment_main, container, false)
-            binding.loginButton.setOnClickListener{view ->
+        // Inflate the layout for this fragment
+        val binding = DataBindingUtil.inflate<FragmentMainBinding>(inflater,R.layout.fragment_main, container, false)
+        binding.loginButton.setOnClickListener{view ->
             view.findNavController().navigate(R.id.action_mainFragment_to_startgameFragment)
         }
-            //NavigationUI.setupWithNavController(binding.navView, navController)
-            setHasOptionsMenu(true)
-            return binding.root
+        //NavigationUI.setupWithNavController(binding.navView, navController)
+        setHasOptionsMenu(true)
+        return binding.root
 
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
-         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-             super.onViewCreated(view, savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
 
-             rank_button.setOnClickListener {
-                 findNavController().navigate(R.id.action_mainFragment_to_rankFragment2)
-             }
+        rank_button.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_rankFragment2)
+        }
 
-         }
+    }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)

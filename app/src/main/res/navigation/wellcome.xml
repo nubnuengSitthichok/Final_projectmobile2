@@ -70,4 +70,9 @@
         android:name="com.example.hitthemole.yourScoreFragment"
         android:label="fragment_your_score"
         tools:layout="@layout/fragment_your_score" />
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.hitthemole.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" />
 </navigation>

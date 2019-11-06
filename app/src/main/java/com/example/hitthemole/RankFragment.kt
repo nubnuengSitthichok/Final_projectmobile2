@@ -26,6 +26,7 @@ class RankFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentRankBinding>(inflater,R.layout.fragment_rank, container, false)
         return inflater.inflate(R.layout.fragment_rank, container, false)
+        setHasOptionsMenu(true)
 
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
