@@ -25,6 +25,7 @@ class RankFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentRankBinding>(inflater,R.layout.fragment_rank, container, false)
+        binding.textInputEditText
         return inflater.inflate(R.layout.fragment_rank, container, false)
         setHasOptionsMenu(true)
 

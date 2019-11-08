@@ -20,8 +20,8 @@
     <fragment
         android:id="@+id/rankFragment"
         android:name="com.example.hitthemole.RankFragment"
-        android:label="fragment_rank"
-        tools:layout="@layout/fragment_rank" >
+        android:label="BUY HERO"
+        tools:layout="@layout/fragment_rank">
         <action
             android:id="@+id/rankFragment_to_mainFragment"
             app:destination="@id/mainFragment"
@@ -34,11 +34,7 @@
         android:id="@+id/startgameFragment"
         android:name="com.example.hitthemole.startgameFragment"
         android:label="fragment_startgame"
-        tools:layout="@layout/fragment_startgame" >
-        <action
-            android:id="@+id/action_startgameFragment_to_plagameFragment"
-            app:destination="@id/plagameFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_startgame" />
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.hitthemole.aboutFragment"
