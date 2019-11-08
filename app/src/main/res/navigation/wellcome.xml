@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.hitthemole.MainFragment"
-        android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        android:name="com.example.hitthemole.rovguide"
+        android:label="ROV GUIDE"
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_rankFragment2"
             app:destination="@id/rankFragment" />
@@ -72,7 +72,12 @@
         tools:layout="@layout/fragment_your_score" />
     <fragment
         android:id="@+id/titleFragment"
-        android:name="com.example.hitthemole.TitleFragment"
+        android:name="com.example.hitthemole.titleFragment"
         android:label="fragment_title"
         tools:layout="@layout/fragment_title" />
+    <fragment
+        android:id="@+id/toptenFragment"
+        android:name="com.example.hitthemole.toptenFragment"
+        android:label="fragment_topten"
+        tools:layout="@layout/fragment_topten" />
 </navigation>

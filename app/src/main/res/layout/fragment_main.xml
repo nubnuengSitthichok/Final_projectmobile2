@@ -14,54 +14,39 @@
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bgg"
-            tools:context=".MainFragment">
+            android:background="@drawable/anim_bg"
+            tools:context=".rovguide">
 
 
             <Button
                 android:id="@+id/login_button"
-                android:layout_width="112dp"
-                android:layout_height="112dp"
-                android:background="@drawable/loginbutton"
+                android:layout_width="109dp"
+                android:layout_height="47dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.134"
+                app:layout_constraintHorizontal_bias="0.142"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.615" />
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="98dp"
-                android:layout_height="156dp"
-                android:layout_marginTop="94dp"
-                android:layout_marginEnd="29dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rank_button"
-                app:layout_constraintVertical_bias="0.866"
-                app:srcCompat="@drawable/mole" />
+                app:layout_constraintVertical_bias="0.967" />
 
             <Button
                 android:id="@+id/rank_button"
-                android:layout_width="123dp"
-                android:layout_height="123dp"
+                android:layout_width="104dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="224dp"
                 android:layout_marginEnd="18dp"
-                android:background="@drawable/rank_button"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.631" />
+                app:layout_constraintVertical_bias="0.967" />
 
             <TextView
                 android:id="@+id/hit_the_mold_textView"
                 android:layout_width="301dp"
                 android:layout_height="64dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/textxx"
+                android:background="@drawable/logo_word"
                 android:fontFamily="@font/coiny"
                 android:shadowColor="@android:color/holo_green_dark"
                 android:textColor="@android:color/background_dark"

@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/aboutFragment"
+            android:icon="@drawable/about_android_trivia"
+            android:title="@string/about_text" />
+        <item
+            android:id="@+id/titleFragment"
+            android:icon="@drawable/ic_accessibility"
+            android:title="@string/new_account" />
+        <item
+            android:id="@+id/toptenFragment"
+            android:icon="@drawable/ic_face"
+            android:title="@string/hero" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_gavel"
+            android:title="@string/item" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
 
-    <item
-        android:id="@+id/titleFragment"
-        android:icon="@drawable/rules"
-        android:title="@string/title" />
-    <item
-        android:id="@+id/aboutFragment"
-        android:icon="@drawable/about_android_trivia"
-        android:title="@string/about_text" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
 </menu>
+
+
+
+
+
+
+

@@ -22,5 +22,9 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="share">Share</string>
+    <string name="new_account">ผู้เล่นใหม่</string>
+    <string name="hero">ตัวละคร</string>
+    <string name="item">การออกไอเท็ม</string>
+    <string name="new_people">พื้นฐาน ROV เบื้องต้น</string>
 
 </resources>

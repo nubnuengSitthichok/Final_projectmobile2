@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
@@ -15,7 +16,7 @@ import com.example.hitthemole.databinding.FragmentMainBinding
 /**
  * A simple [Fragment] subclass.
  */
-class MainFragment : Fragment() {
+class rovguide : Fragment() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -24,7 +25,7 @@ class MainFragment : Fragment() {
         binding.loginButton.setOnClickListener{view ->
             view.findNavController().navigate(R.id.action_mainFragment_to_startgameFragment)
         }
-        //NavigationUI.setupWithNavController(binding.navView, navController)
+
         setHasOptionsMenu(true)
         return binding.root
 
@@ -42,10 +43,10 @@ class MainFragment : Fragment() {
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.options_menu, menu)
-    }
+//    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+//        super.onCreateOptionsMenu(menu, inflater)
+//        inflater.inflate(R.menu.options_menu, menu)
+//    }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return NavigationUI.onNavDestinationSelected(item,

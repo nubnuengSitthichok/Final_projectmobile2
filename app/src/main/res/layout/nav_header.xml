@@ -11,31 +11,16 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="404dp"
-            android:layout_height="316dp"
-            android:layout_marginBottom="404dp"
+            android:layout_width="396dp"
+            android:layout_height="276dp"
+
+            android:background="@drawable/about_anim"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@color/colorPrimary" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="148dp"
-            android:layout_height="168dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="365dp"
-            android:background="@drawable/about_android_trivia"
-            android:contentDescription="TODO"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        //app:srcCompat="@drawable/about_android_trivia"
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
