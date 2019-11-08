@@ -14,11 +14,11 @@
             android:icon="@drawable/ic_face"
             android:title="@string/hero" />
         <item
-            android:id="@+id/nav_chat"
+            android:id="@+id/item"
             android:icon="@drawable/ic_gavel"
             android:title="@string/item" />
         <item
-            android:id="@+id/nav_profile"
+            android:id="@+id/webFragment2"
             android:icon="@drawable/ic_profile"
             android:title="Profile" />
 

@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.navigation.findNavController
@@ -21,28 +23,27 @@ import kotlinx.android.synthetic.main.fragment_startgame.*
  */
 class startgameFragment : Fragment() {
     private lateinit var binding: ActivityMainBinding
-
-
+    var mywebview: WebView? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding = DataBindingUtil.inflate<FragmentStartgameBinding>(inflater,R.layout.fragment_startgame, container, false)
-        binding.playGamePlaygamebutton.setOnClickListener{view ->
-            view.findNavController().navigate(R.id.action_startgameFragment_to_plagameFragment)
+
+        mywebview = binding.webview
+        mywebview!!.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                view?.loadUrl(url)
+                return true
+            }
         }
+        mywebview!!.loadUrl("https://www.facebook.com/ROVTH/")
+
         return binding.root
 
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_startgame, container, false)
     }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-        play_game_playgamebutton.setOnClickListener {
-            findNavController().navigate(R.id.action_startgameFragment_to_plagameFragment)
-        }
-
-    }
 
 
 

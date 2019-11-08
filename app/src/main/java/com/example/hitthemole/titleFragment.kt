@@ -31,9 +31,9 @@ class titleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentTitleBinding>(inflater,R.layout.fragment_title, container, false)
-
+        return binding.root
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_title, container, false)
+        //return inflater.inflate(R.layout.fragment_title, container, false)
     }
 
 

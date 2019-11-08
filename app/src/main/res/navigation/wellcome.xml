@@ -42,7 +42,7 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.hitthemole.aboutFragment"
-        android:label="fragment_about"
+        android:label="ABOUT"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/plagameFragment"
@@ -78,6 +78,16 @@
     <fragment
         android:id="@+id/toptenFragment"
         android:name="com.example.hitthemole.toptenFragment"
-        android:label="fragment_topten"
+        android:label="HERO GUIDE"
         tools:layout="@layout/fragment_topten" />
+    <fragment
+        android:id="@+id/item"
+        android:name="com.example.hitthemole.item"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" />
+    <fragment
+        android:id="@+id/webFragment2"
+        android:name="com.example.hitthemole.webFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" />
 </navigation>

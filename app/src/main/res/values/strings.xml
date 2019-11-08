@@ -28,5 +28,6 @@
     <string name="new_people">พื้นฐาน ROV เบื้องต้น</string>
     <string name="skill_text">สกิลติดตัว</string>
     <string name="skill_data_text">การโจมตีปกติจะได้รับ 1 ความกระหาย ซึ่งหากสะสมเต็ม Omen จะวิ่งเร็วขึ้น 60 และโจมตีเร็วขึ้น 25% เป็นเวลา 5 วิ จากนั้นจากโจมตีปกติจะสร้าง ความเสียหายจริง 60 พร้อมลดคูลดาวน์ให้สกิล 1 และ 2 ครั้งละ 1 วิ มีโอกาสที่ Omen จะโจมตีทีเดียว 2 ครั้ง โดยครั้งที่ 2 จะเบาลง 50%</string>
+    <string name="fanpage_tvbutton">FANPAGE</string>
 
 </resources>
