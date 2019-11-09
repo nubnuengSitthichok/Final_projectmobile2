@@ -69,7 +69,7 @@
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.example.hitthemole.titleFragment"
-        android:label="fragment_title"
+        android:label="NEW PLAYER"
         tools:layout="@layout/fragment_title" />
     <fragment
         android:id="@+id/toptenFragment"
@@ -79,7 +79,7 @@
     <fragment
         android:id="@+id/item"
         android:name="com.example.hitthemole.item"
-        android:label="fragment_item"
+        android:label="ITEM"
         tools:layout="@layout/fragment_item" />
     <fragment
         android:id="@+id/webFragment2"
